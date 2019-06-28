@@ -2,8 +2,8 @@ import mysql.connector
 
 '''mydb = mysql.connector.connect(
   host="localhost",
-  user="root",
-  passwd="Success222.",
+  user="",
+  passwd="",
   database="protonMail"
 )
 
@@ -43,15 +43,15 @@ def combineDict(dictToBeAdded, mainDict):
 
 ProtonMailGlobal = mysql.connector.connect(
   host="localhost",
-  user="root",
-  passwd="Success222.",
+  user="",
+  passwd="",
   database="ProtonMail"
 )
 
 ProtonMailShard = mysql.connector.connect(
   host="localhost",
-  user="root",
-  passwd="Success222.",
+  user="",
+  passwd="",
   database="ProtonMailShard"
 )
 
