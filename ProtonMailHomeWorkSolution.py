@@ -35,8 +35,8 @@ def blobDictionary(cursor, columnName, tableName):
  #for the connection to MySQL
  #Please input the details of your MySQL database
 hostName = "localhost"
-userName = "root"
-password = "Success222."
+userName = ""
+password = ""
 
 ProtonMailGlobal = mysql.connector.connect(
   host=hostName,
