@@ -47,3 +47,19 @@ def diagonals(array):
         if temporaryArray != []:
             diagonalArray += [temporaryArray]
     return diagonalArray
+
+
+
+def minArraySum(array):
+    arraySum = 0
+    array.sort()
+    for i in range(len(array)):
+        eCount = array.count(array[i])
+        if i == 0:
+            arraySum += array[i] + eCount * (eCount - 1) / 2
+        else:
+            if array[i] <= array[i - 1]:
+                replace_all(array[i:], array[i], array[i - 1] + 1)
+            eCount = array.count(array[i - 1] + 1)
+            arraySum += array[i] + eCount * (eCount - 1) / 2
+    return arraySum
